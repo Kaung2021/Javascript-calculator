@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="light.css" id="theme">
+
+<body>
+    <!--Creating Javascript calculator-->
+    <div class="wrapper">
+        <div class="container">
+            <h1>Javascript Calculator</h1>
+            <!--first row-->
+            <div class="first_row">
+                <input type="text" id="result" class="result" placeholder="result" readonly>
+                <input type="button" value="C" id="clear" onclick="clearscreen()">
+            </div>
+            <!--second row-->
+            <div class="second_row">
+                <input type="button" value="1" id="one" onclick="getdata(1)">
+                <input type="button" value="2" id="two" onclick="getdata(2)">
+                <input type="button" value="3" id="three" onclick="getdata(3)">
+                <input type="button" value="+" onclick="getdata('+')">
+            </div>
+            <!--third row-->
+            <div class="third_row">
+                <input type="button" value="4" id="four" onclick="getdata(4)">
+                <input type="button" value="5" id="five" onclick="getdata(5)">
+                <input type="button" value="6" id="six" onclick="getdata(6)">
+                <input type="button" value="-" onclick="getdata('-')">
+            </div>
+            <div class="fourth_row">
+                <input type="button" value="7" id="seven" onclick="getdata(7)">
+                <input type="button" value="8" id="eight" onclick="getdata(8)">
+                <input type="button" value="9" id="nine" onclick="getdata(9)">
+                <input type="button" value="*" onclick="getdata('*')">
+            </div>
+            <!--Fifth row-->
+            <div class="fifth_row">
+                <input type="button" value="/" onclick="getdata('/')">
+                <input type="button" value="0" id="zero" onclick="getdata(0)">
+                <input type="button" value="." id="dot" onclick="getdata('.')">
+                <input type="button" value="=" onclick="result.value = eval(result.value)">
+            </div>
+            <button id="darkmode" onclick="changetheme()">Dark-mode</button>
+        </div>
+    </div>
+    <!--Adding Javascript-->
+    <script src="feature.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/*Start adding style to content*/
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(197, 197, 197);
+    transition: 1s all;
+}
+
+.container {
+    width: 300px;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 1px;
+}
+
+
+/*Start style to content*/
+
+.result {
+    width: 72.5%;
+}
+
+input {
+    width: 70px;
+    padding: 20px;
+    margin-bottom: 2px;
+    color: rgb(49, 49, 49);
+    background-color: rgb(50, 150, 163);
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 22px;
+}
+
+.first-row,
+.second-row,
+.third-row,
+.fourth-row,
+.fifth-row {
+    margin-bottom: 2px;
+}
+
+input[type=text] {
+    background-color: rgb(219, 219, 219);
+}
+
+input[type=button]:hover {
+    background-color: rgb(39, 129, 141);
+    padding: 2px;
+}
+
+#clear {
+    background-color: red;
+}
+
+#darkmode {
+    padding: 15px;
+    background-color: rgb(50, 150, 163);
+    color: whitesmoke;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#darkmode:active {
+    background-color: rgb(39, 129, 141);
+}
